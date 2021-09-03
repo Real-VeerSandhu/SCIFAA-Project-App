@@ -31,7 +31,7 @@ def main():
         st.write('### This interactive app contains all developments as part of the Canada v.s. USA COVID-19 Analysis.')
         st.write('Completed by Veer Sandhu as a Data Science Intern at SCI FAA')
         st.write('*The COVID-19 pandemic has impacted every nation on earth and has been dealt with through countless methods and strategies. Investigating where countries succeeded and where they failed can provide valuable information on resource management, prioritization, planning, and organization. Canada and the U.S may seem similar at first glance, however, they are different economically, socially, and politically. This project compares the two countries regarding how they dealt with the pandemic and which one took the better approach.*')
-        with open('Data/final_report.pdf', "rb") as f:
+        with open('Data/report.pdf', "rb") as f:
                 b64 = base64.b64encode(f.read()).decode('utf-8')        
         a = f'<a href="data:file/csv;base64,{b64}" download="Canada vs USA COVID-19 Analysis Report - Veer Sandhu.pdf">Download the Project Report</a>'
         st.markdown(a, unsafe_allow_html=True)
