@@ -10,4 +10,5 @@ headless = true\n\
 base=\"light\"\n\
 primaryColor=\"#0024ff\"\n\
 font=\"serif\"\n\
+\n\
 " > ~/.streamlit/config.toml
