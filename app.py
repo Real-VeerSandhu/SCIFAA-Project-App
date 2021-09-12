@@ -9,7 +9,7 @@ st.set_page_config(page_title="CAN-USA COVID-19 Analysis", page_icon="📈", lay
 
 st.markdown("""
 # Canada v.s. USA COVID-19 Analysis
-A data science project bringing forth insight on the fight against the pandemic\n
+A Data Science project bringing forth insight on the fight against the pandemic\n
 """)
 st.write('----')
 
@@ -29,11 +29,11 @@ def main():
     nav = st.selectbox('Navigation', ['Home', 'Analysis Charts', 'Data Modelling'])
     if nav == 'Home':
         st.write('### This interactive app contains all developments as part of the Canada v.s. USA COVID-19 Analysis.')
-        st.write('Completed by Veer Sandhu as a Data Science Intern at SCI FAA')
-        st.write('*The COVID-19 pandemic has impacted every nation on earth and has been dealt with through countless methods and strategies. Investigating where countries succeeded and where they failed can provide valuable information on resource management, prioritization, planning, and organization. Canada and the U.S may seem similar at first glance, however, they are different economically, socially, and politically. This project compares the two countries regarding how they dealt with the pandemic and which one took the better approach.*')
-        with open('Data/report.pdf', "rb") as f:
+        st.write('*Completed by Veer Sandhu as a Data Science Intern at SCI FAA*')
+        st.write('The COVID-19 pandemic has impacted every nation on earth and been dealt with through countless methods and strategies. Investigating where countries succeeded and where they failed can provide valuable information on resource management, prioritization, planning, and organization. Canada and the U.S may seem similar at first glance, however, they differ economically, socially, and politically. This project compares the two countries regarding how they dealt with the pandemic and where certain damages were dealt. Note that the documentation and report are written in plain language to provide easy understanding and comprehension. ')
+        with open('Data/analytical-report.pdf', "rb") as f:
                 b64 = base64.b64encode(f.read()).decode('utf-8')        
-        a = f'<a href="data:file/csv;base64,{b64}" download="Canada vs USA COVID-19 Analysis Report - Veer Sandhu.pdf">Download the Project Report</a>'
+        a = f'<a href="data:file/csv;base64,{b64}" download="Canada vs USA COVID-19 Analysis Report - Veer Sandhu.pdf">Download the Analytical Report</a>'
         st.markdown(a, unsafe_allow_html=True)
         st.write("""
         [View the Code Repository](https://github.com/Real-VeerSandhu/SCIFAA-COVID-19-Project)
