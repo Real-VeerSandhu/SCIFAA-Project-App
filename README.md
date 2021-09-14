@@ -1,5 +1,5 @@
 # Canada v.s. USA COVID-19 Analysis App
-This repository is only used for the project's app. Main repository [here](https://github.com/Real-VeerSandhu/SCIFAA-COVID-19-Project)
+This repository is only used for the project's app. The [main repository is here](https://github.com/Real-VeerSandhu/SCIFAA-COVID-19-Project)
 
 **Interactive Project App**: [Public Link](https://canada-usa-covid19-analysis.herokuapp.com/)
 
